@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "progress": "../../components/progress/index"
+  },
+  "navigationStyle":"custom"
+}

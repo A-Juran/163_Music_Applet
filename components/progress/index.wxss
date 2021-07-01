@@ -1,0 +1,56 @@
+/* components/progress/progress.wxss */
+/* 588rpx max 160rpx min */
+.progress-root-container {
+  display: flex;
+  flex-direction: row;
+  width: 710rpx;
+  align-items: center;
+  height: 12rpx;
+  padding: 12rpx 0;
+}
+
+.text {
+  width: 90rpx;
+  font-size: 22rpx;
+  color: #eee;
+  position: absolute;
+  left: 29rpx;
+  text-align: right;
+}
+
+.progress-max {
+  position: absolute;
+  left: 161rpx;
+  height: 6rpx;
+  width: 428rpx;
+  background: #999;
+  border-radius: 30rpx;
+  z-index: 10;
+}
+
+.progress-current {
+  position: absolute;
+  left: 161rpx;
+  height: 6rpx;
+  width: 428rpx;
+  background: #fff;
+  border-radius: 30rpx;
+  z-index: 20;
+}
+
+.pencent-text {
+  width: 90rpx;
+  font-size: 22rpx;
+  color: #eee;
+  left: 625rpx;
+  position: absolute;
+  text-align: left;
+}
+
+.slice-button {
+  left: 557rpx;
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  z-index: 30;
+}

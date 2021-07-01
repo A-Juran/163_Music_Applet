@@ -1,0 +1,191 @@
+
+/* pages/index/index.wxss */
+.small_player{
+  position: fixed;
+  bottom: 40rpx;
+  z-index: 66;
+}
+
+.content{
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.user_img{
+  width:1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+}
+.swiper-item{
+  width: 750rpx;
+  height: 280rpx;
+  text-align: center;
+  margin: 30rpx 0;
+}
+.swiper-item image{
+  width: 95%;
+  height: 280rpx;
+  border-radius: 20rpx;
+}
+.search_inp{
+  padding: 0;
+  box-sizing: content-box;
+  height: 50rpx;
+  background-color: #f3f1f2;
+  border-radius: 50rpx;
+  margin: 20rpx 0;
+  padding: 0 40rpx;
+  font-size: 28rpx;
+  color: #969694;
+  border: 1px solid #f3f1f2;
+}
+.search{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  /* margin-top: 180rpx; */
+
+}
+.search view{
+  width: 10%;
+  font-size: 40rpx;
+  margin: 0 20rpx;
+}
+.search view:nth-child(2){
+  width: 80%;
+  margin: 0;
+}
+
+.icon_box{
+width: 1500rpx;
+margin: 20rpx 0;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+border-bottom: 0.5px solid #f3f1f2;
+padding-bottom: 10rpx;
+}
+.icon_box view {
+/* flex: 1; */
+/* background-color: #fff1f1; */
+margin: 0 30rpx;
+text-align: center;
+}
+.icon_box view image{
+width: 80rpx;
+height: 80rpx;
+background-color:red;
+border-radius: 50rpx;
+display: block;
+}
+.icon_box view text{
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.recommend .recommend_title{
+  /* width: 100%; */
+  padding: 0 30rpx;
+  padding-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.recommend{
+  position: relative;
+}
+.recommend .recommend_title text{
+  padding: 0 20rpx;
+  /* width: 30%; */
+}
+.recommend  .recommend_title text:first-child{
+  color: black;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+.recommend  .recommend_title text:last-child{
+  font-size: 20rpx;
+  border: 1px solid #bdbcbc;
+  font-weight: 600;
+  border-radius: 26rpx;
+  text-align: center;
+  line-height: 45rpx;
+}
+.recommend .recommend_content{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  display: flex;
+  width: 1500rpx;
+  justify-content: flex-start
+}
+.recommend .recommend_content view{
+  width: 200rpx;
+  margin-right: 25rpx
+}
+
+.recommend_item image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+.recommend_item text{
+  padding: 2rpx;
+  color: #333333;
+  font-size: 26rpx;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.hot_box{
+  width: 750rpx;
+  padding-left: 10rpx;
+  margin-top: 40rpx;
+  
+}
+.hot_box view {
+  width: 750rpx;
+  display: flex;
+  margin: 20rpx;
+}
+.hot_box view image{
+  width: 200rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+}
+.hot_box view view{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hot_box view view text{
+  width: 300rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+  color: black;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+.hot_box view view text:last-child{
+  color: #999999;
+  font-size: 20rpx;
+  /* display: block; */
+}
+.small_float{
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+}
+.small_float{
+  right: 0;
+}
+

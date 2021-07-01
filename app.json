@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ranking/ranking",
+    "pages/daily/daily",
+    "pages/artists/artists",
+    "pages/play/play",
+    "pages/video/video",
+    "pages/comment/comment",
+    "pages/songClassify/songClassify",
+    "pages/songPersonal/songPersonal",
+    "pages/songSearch/songSearch"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

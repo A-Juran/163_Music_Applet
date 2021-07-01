@@ -1,0 +1,99 @@
+/* pages/songSearch/songSearch.wxss */
+/* 搜索框 */
+.main{
+  width: 90%;
+  margin: 0 auto;
+}
+.search{
+  width: 90%;
+  margin: 0 auto;
+}
+.search #search_input{
+  width: 100%;
+  border-bottom: 1px solid #c1c1c1;
+  padding: 0px 0px 4px 0px;
+}
+.search image{
+  width: 48rpx;
+  height: 48rpx;
+  position: relative;
+  top: -58rpx;
+  right: -90%;
+}
+/* 热歌榜 */
+.contianer{
+  margin-top: 8rpx;
+  width: 100%;
+}
+.box{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 1px solid #000; */
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow:0rpx 0rpx 20rpx rgb(0 0 0 / 10%);
+}
+/* 热门歌曲 */
+.hot_item {
+  width: 50%;
+  height: 30rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  margin-bottom: 42rpx;
+}
+.hot_item .hot_text{
+  color: #26c5c8;
+}
+.hot_item .hot_name{
+  color: #404040;
+  margin-left: 24rpx;
+}
+.hot_item .hot_img{
+  width: 65rpx;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 12rpx;
+}
+/* 音乐专区 */
+.music_areo{
+  margin-top: 30rpx;
+}
+.music_areo text{
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+/* 搜索内容 */
+.search_music{
+  margin-top: 15px;
+}
+.search_music .search_music_item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+.search_music .search_music_item .search_music_item_left .search_music_item_name text{
+  font-size: 28rpx;
+}
+.search_music .search_music_item .search_music_item_left .desc image{
+  width: 50rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.search_music .search_music_item .search_music_item_left .desc text{
+  margin-left: 4rpx;
+  font-size: 24rpx;
+  color: #818181;
+}
+.search_music .search_music_item .search_music_item_right{
+  line-height: 42px;
+}
+.search_music .search_music_item .search_music_item_right image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}

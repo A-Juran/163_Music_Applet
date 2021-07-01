@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "i-input": "../../dist/input/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-button": "../../dist/button/index",
+    "i-toast": "../../dist/toast/index"
+  },
+  "navigationBarBackgroundColor": "#dc2c1f",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#dc2c1f",
+  "disableScroll": false,
+  "navigationStyle": "custom"
+}

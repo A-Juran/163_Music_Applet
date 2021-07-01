@@ -1,0 +1,59 @@
+/* pages/login/login.wxss */
+page {
+  background-color: #dc2c1f;
+}
+
+.logo_box {
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.logo {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+.user_info {
+  border-radius: 5rem;
+  margin-top: .8rem;
+  font-size: .8rem;
+}
+
+.login_form {
+  margin-top: 9rem;
+}
+
+.login_btn {
+  width: 100% !important;
+  color: #dc2c1f !important;
+  height: 2.6rem !important;
+  line-height: 1.7rem !important;
+  background: #fff;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 3rem;
+}
+
+.footer_img {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.footer_kjlogin {
+  margin-bottom: 1.5rem;
+  text-align: center !important;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: .6rem;
+  color: rgb(255, 118, 111);
+}
+
+.xy {
+  color: #fff;
+}

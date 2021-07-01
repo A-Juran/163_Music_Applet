@@ -1,0 +1,40 @@
+<!--pages/singer/singer.wxml-->
+<view class="close" bindtap="close" style="background-image: url(../../static/plays/eks.png);"></view>
+<view style="background-image:url({{detail.user.backgroundUrl}})" class="bgpic">
+</view>
+<view class="card top">
+  <image src="{{detail.user.avatarUrl}}" class="headpic"></image>
+  <view class="identify">
+    <text class="name">{{detail.artist.name}}</text>
+    <image src="{{detail.identify.imageUrl}}" class="identifypic"></image>
+  </view>
+  <text class="desc">{{detail.identify.imageDesc}}</text>
+</view>
+<view class="card middle">
+  <view class="middle-text">艺人名: <text>{{detail.artist.name}}</text></view>
+  <view class="middle-text">昵称: <text>{{detail.user.nickname}}</text></view>
+  <view class="middle-text">生日: <text>{{detail.user.birthday}}</text></view>
+  <view class="middle-text">个人简介: <text>{{detail.user.signature}}</text></view>
+</view>
+
+<view class="playall" bindtap="playAll">
+  <image src="../../static/play_all.png" class="playpic"></image>
+  <text class="playtext">播放全部</text>
+</view>
+<view wx:for="{{music}}" wx:for-item='music' wx:for-index="i" class="musiclist">
+  <view class="musicimg" bindtap="musictap" data-musicid="{{music.id}}">
+    <image src="{{music.al.picUrl}}" class="musicpic"></image>
+  </view>
+  <view class="musicinfo" bindtap="musictap" data-musicid="{{music.id}}">
+    <text class="musictitle">{{music.name}}</text>
+    <text class="musicauthor">
+      <block wx:for="{{music.ar}}" wx:for-item='ar' wx:for-index="j">
+        <block wx:if="{{j == 0}}">{{ar.name}}</block>
+        <block wx:else> / {{ar.name}}</block>
+      </block>
+    </text>
+  </view>
+  <view wx:if="{{music.mv}}" data-musicmv="{{music.mv}}" bindtap="mvtap">
+    <image src="../../static/play_mv.png" class="musicmvpic"></image>
+  </view>
+</view>

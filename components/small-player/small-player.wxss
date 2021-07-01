@@ -1,0 +1,91 @@
+
+.circul image{
+	width: 100%;
+	height: 100rpx;
+	position: absolute;
+}
+.circul image:last-child{
+	width: 70rpx;
+	height: 70rpx;
+	border-radius: 40rpx;
+	position: absolute;
+	left: 16rpx;
+	top: 16.5rpx;
+}
+.circul{
+	position: relative;
+	width: 100rpx;
+	top: -60rpx;
+	margin: 0 10rpx;
+}
+.play_box{
+	padding-left: 28rpx;
+	width: 750rpx;
+	height: 80rpx;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	border-top: 0.5px solid #e0e0df;
+	border-bottom: 0.5px solid #e0e0df;
+}
+.msg_box{
+	width: 400rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 50%;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #adaeaa;
+}
+.msg_box text{
+	color: #2e2f2e;
+	margin: 10rpx;
+	font-size: 26rpx;
+	line-height: 26rpx;
+	font-weight: 800;
+	overflow: hidden;
+	text-overflow:ellipsis; white-space: nowrap;
+}
+.msg_box text:last-child{
+	color: #adaeaa;
+	font-size: 20rpx;
+	overflow: hidden;
+}
+.fun_box{
+	width: 180rpx;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	font-size: 26rpx;
+	color: black;
+	color: red;
+	
+}
+.fun_box image{
+	width: 35rpx;
+}
+
+@-webkit-keyframes rotation{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+.Rotation{
+-webkit-transform: rotate(360deg);
+animation: rotation 5s linear infinite;
+-moz-animation: rotation 5s linear infinite;
+-webkit-animation: rotation 5s linear infinite;
+-o-animation: rotation 5s linear infinite;
+}
+

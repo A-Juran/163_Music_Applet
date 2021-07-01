@@ -1,0 +1,37 @@
+<!--pages/login/login.wxml-->
+<view class="logo_box">
+  <image class="logo" src="../../static/logo.png"></image>
+</view>
+<view class="login_form">
+  <i-row>
+    <i-col span="20" offset="2" i-class="col-class">
+      <i-input adjust-position="false" i-class="tel user_info" data-name="username" bindblur="get_user_info"
+        type="number" maxlength="11" placeholder="请输入手机号" />
+      <i-input adjust-position="false" i-class="pass user_info" data-name="password" bindblur="get_user_info"
+        type="password" maxlength="16" placeholder="请输入密码" />
+      <button class="login_btn" bindtap="login">登陆</button>
+    </i-col>
+  </i-row>
+</view>
+<view class="footer">
+  <i-row i-class="footer_kjlogin">
+    <i-col span="5" offset="2">
+      <image class="footer_img" bindtap="alert" src="../../static/wx.png"></image>
+    </i-col>
+    <i-col span="5">
+      <image class="footer_img" bindtap="alert" src="../../static/qq.png"></image>
+    </i-col>
+    <i-col span="5">
+      <image class="footer_img" bindtap="alert" src="../../static/wb.png"></image>
+    </i-col>
+    <i-col span="5">
+      <image class="footer_img" bindtap="alert" src="../../static/wy.png"></image>
+    </i-col>
+    <i-toast id="toast" />
+  </i-row>
+  <i-row>
+    <i-col span="20" offset="4">
+      <text class="footer_text">登录即已同意<text class="xy">《用户协议》《隐私政策》《儿童隐私政策》</text></text>
+    </i-col>
+  </i-row>
+</view>

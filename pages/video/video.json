@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "i-input": "../../dist/input/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-button": "../../dist/button/index",
+    "i-toast": "../../dist/toast/index",
+    "i-spin": "../../dist/spin/index"
+  },
+  "navigationBarTitleText": "视频推荐",
+  "navigationBarBackgroundColor": "#F5F5F5"
+
+}

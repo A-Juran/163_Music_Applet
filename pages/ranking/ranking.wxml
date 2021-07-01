@@ -1,0 +1,41 @@
+<!--pages/ranking/ranking.wxml-->
+<view class="close" bindtap="close" style="background-image: url(../../static/plays/eks.png);"></view>
+<i-row>
+  <i-col span="24">
+    <image class="top_img" bindtap="" src="../../static/rgbang.jpg"></image>
+  </i-col>
+  <i-row>
+    <i-col i-class="yj" span="18" offset="3">
+      <i-row class="details">
+        <i-col span="8">
+          <image class="rg_icon" src="../../static/sc.png"></image><text>{{subscribedCount}} </text>
+        </i-col>
+        <i-col span="8">
+          <image class="rg_icon" src="../../static/pl.png"></image><text>{{commentCount}} </text>
+        </i-col>
+        <i-col span="8">
+          <image class="rg_icon" src="../../static/share.png"></image><text>{{sharecount}}</text>
+        </i-col>
+      </i-row>
+    </i-col>
+  </i-row>
+</i-row>
+<view class="playall" bindtap="playall">
+  <image src="../../static/ckv.png" class="playpic"></image>
+  <text class="playtext">播放全部</text>
+</view>
+<i-row i-class="item" wx:for="{{rankinglist}}">
+  <i-col span="2" offset="1" class="{{index+1<=3?'red':'bh'}}">{{index+1}}</i-col>
+  <i-col span="18" offset="1">
+    <view class="nameq">{{item.name}}</view><text wx:for="{{item.ar}}" class="author">{{item.name}} </text>
+  </i-col>
+  <i-col span="2">
+    <image class="play" bindtap="playmusic" data-id="{{item.id}}" src="../../static/play.png" ></image>
+  </i-col>
+</i-row>
+<view  wx:if="{{spinShow}}" class="container">
+  <i-spin fix></i-spin>
+</view>
+
+
+

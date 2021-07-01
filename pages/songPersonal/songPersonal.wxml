@@ -1,0 +1,64 @@
+<!--pages/songAuthor/songAuthor.wxml-->
+<!-- 作者图片 -->
+<view class="author_photo">
+  <!-- data.level -->
+  <image src="{{personal.data.profile.backgroundUrl}}"></image>
+</view>
+<!-- 作者简介 -->
+<view class="author_info main">
+  <view class="author_box">
+    <view class="author_img">
+      <image src="{{personal.data.profile.avatarUrl}}" class="author_box_img"></image>
+    </view>
+    <view class="ahtor_box_name">
+      <text>{{personal.data.profile.nickname}}</text>
+      <image src="../static/img/e6a.png"></image>
+    </view>
+    <view class="ahtor_box_desc">
+      <text>{{personal.data.profile.followeds}}关注 | {{personal.data.profile.follow}} 粉丝 | Lv.{{personal.data.level}}</text>
+      <view class="ahthor_box_desc_sf">
+        <text>{{personal.data.profile.signature}}</text>
+      </view>
+    </view>
+    <view class="ahtor_box_gz">
+      <button class="ahtor_box_gz_btn">编辑信息</button>
+    </view>
+  </view>
+</view>
+<!-- 歌手tab -->
+<view class="author_all_select main">
+  <scroll-view scroll-x="true" bindscroll="scroll" class="scroll-view_H_select" scroll-into-view="NAV{{status}}" scroll-with-animation="true">
+    <view class="scroll-view-all">
+      <view id="demo1" class="scroll-view-item_select" bindtap="getStatus" data-index="1">主页</view>
+      <view id="demo2" class="scroll-view-item_select" bindtap="getStatus" data-index="2">动态</view>
+      <view id="demo3" class="scroll-view-item_select" bindtap="getStatus"data-index="3">播客</view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 歌手tab_content -->
+<view class="author_all_content main">
+  <scroll-view class="scroll-view_H_tab" scroll-x="true" bindscroll="scroll" scroll-into-view="NAV{{status}}" scroll-with-animation="true">
+    <!-- 主页 -->
+    <view id="demo1" class="scroll-view-item_select" id="NAV{{1}}">
+      <view class="scroll-view-item_style">
+        <view class="tab_author_title">
+          <text>基本信息</text>
+        </view>
+        <view class="tab_author_info">
+          <rich-text>村龄：<span>4年（2017年4月注册）</span></rich-text>
+          <rich-text>年龄：<span>00后 魔蝎座</span></rich-text>
+          <rich-text>性别：<span>男</span></rich-text>
+          <rich-text>地区：<span>四川省 泸州市</span></rich-text>
+          <rich-text>大学：<span>四川职业技术学院</span></rich-text>
+        </view>
+      </view>
+    </view>
+    <!-- 歌曲 -->
+    <view id="demo2" class="scroll-view-item_select" id="NAV{{2}}">
+      <rich-text><span>暂无内容</span></rich-text>
+    </view>
+    <view id="demo2" class="scroll-view-item_select" id="NAV{{3}}">
+    <rich-text><span>暂无内容</span></rich-text>
+    </view>
+  </scroll-view>
+</view>

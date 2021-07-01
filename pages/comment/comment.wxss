@@ -1,0 +1,53 @@
+/* pages/comment/comment.wxss */
+.top_title{
+  margin-top: .8rem;
+  font-weight: bold;
+}
+.order{
+  font-weight: 400;
+  color: gray;
+  font-size: .8rem;
+  text-align: center;
+}
+.active{
+  font-weight: bold;
+  color: black; 
+}
+.comment{
+  margin-top: 1rem;
+}
+.avatar{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.name{
+  margin-top: .2rem;
+  font-size: .9rem;
+}
+.time{
+  font-size: .7rem;
+  color: gray;
+}
+.good{
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: -.22rem;
+}
+
+.dz text{
+  margin-top: -.10rem;
+  margin-right: .5rem;
+  text-align: right;
+  color: rgb(200,200,200);
+  font-size: .9rem;
+}
+.dz{
+  margin-top: 1.04rem;
+  
+}
+.dxk{
+  padding-bottom: 1rem;
+  border-bottom:1px solid rgb(239,239,239);
+  font-size: .96rem;
+}

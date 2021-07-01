@@ -1,0 +1,33 @@
+<!--pages/listdetails/listdetails.wxml-->
+<view class="close" bindtap="close" style="background-image: url(../../static/plays/eks.png);"></view>
+<view style="background-image:url({{music[0].al.picUrl || bgpic}});" class="bgpic">
+</view>
+<view class="top">
+  <view class="text">
+    <text class="day">{{day}}</text>
+    <text class="month">/{{month}}</text>
+  </view>
+</view>
+
+<view class="playall" bindtap="playAll">
+  <image src="../../static/play_all.png" class="playpic"></image>
+  <text class="playtext">播放全部</text>
+</view>
+
+<view wx:for="{{music}}" wx:for-item='music' wx:for-index="i" class="musiclist">
+  <view class="musicimg" bindtap="musictap" data-musicid="{{music.id}}">
+    <image src="{{music.al.picUrl}}" class="musicpic"></image>
+  </view>
+  <view class="musicinfo" bindtap="musictap" data-musicid="{{music.id}}">
+    <text class="musictitle">{{music.name}}</text>
+    <text class="musicauthor">
+      <block wx:for="{{music.ar}}" wx:for-item='ar' wx:for-index="j">
+        <block wx:if="{{j == 0}}">{{ar.name}}</block>
+        <block wx:else> / {{ar.name}}</block>
+      </block>
+    </text>
+  </view>
+  <view wx:if="{{music.mv}}" data-musicmv="{{music.mv}}" bindtap="mvtap">
+    <image src="../../static/play_mv.png" class="musicmvpic"></image>
+  </view>
+</view>

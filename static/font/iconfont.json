@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1615241",
+      "name": "菜单",
+      "font_class": "tubiaozhizuomoban-copy",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "3180126",
+      "name": "收 藏",
+      "font_class": "shoucang2",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "6448278",
+      "name": "个人中心--我的好友icon",
+      "font_class": "gerenzhongxin--wodehaoyouicon",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "13820034",
+      "name": "已购",
+      "font_class": "yigou",
+      "unicode": "e504",
+      "unicode_decimal": 58628
+    },
+    {
+      "icon_id": "17309854",
+      "name": "网易云音乐",
+      "font_class": "wangyiyunyinle",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "19277418",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "21885595",
+      "name": "播放",
+      "font_class": "bofang1",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "22338662",
+      "name": "听歌识曲",
+      "font_class": "tinggeshiqu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    }
+  ]
+}

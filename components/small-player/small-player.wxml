@@ -1,0 +1,22 @@
+<view class="play_box">
+		
+		<view class="circul " >			
+		<image src="../../static/plays/e2v.png" mode="aspectFit" class="Rotation"/>
+		<image src="http://p3.music.126.net/isJhj9QuNN-_TLtGkwq18w==/109951163416721991.jpg" mode="aspectFit" class="Rotation" />
+		</view>
+
+		<view class="msg_box">
+			<text>
+			他不爱我
+			</text>
+			<text space="true">
+			--    金沙
+			</text>
+		</view>
+		<view class="fun_box">
+			<!-- <view class="{{isPlay?'iconfont icon-bofang1':'iconfont icon-bofang'}}" bindtap="play"></view>
+			<view class="iconfont icon-tubiaozhizuomoban-copy"></view> -->
+			<image src="{{isPlay?'../../static/icons/index/播放.svg':'../../static/icons/index/暂停.svg'}}" bindtap="play"></image>
+			<image src="../../static/icons/index/菜单.svg"></image>
+		</view>
+	</view>

@@ -1,0 +1,55 @@
+<!-- 搜索框 -->
+<view class="search">
+  <input id="search_input" class="weui-input" auto-focus placeholder="薛之谦" bindconfirm="search"/>
+  <image src="../static/img/cha.png" id="clear"></image>
+</view>
+<!-- 热歌榜 -->
+<view class="contianer" wx:if="{{display}}">
+  <view class="box">
+    <view class="hot_item" wx:for="{{hotList.data.data}}" wx:key="index" bindtap="bf" >
+      <span class="hot_text">{{index+1}}</span>
+      <text class="hot_name">{{hotList.data.data[index].searchWord}}</text>
+      <image src="../static/img/eaw.png" class="hot_img" wx:if="{{hotList.data.data[index].iconType == 1}}"></image>
+    </view>
+  </view>
+</view>
+<!-- 搜索内容 -->
+<view class="search_music main" wx:else>
+  <view class="search_music_item" wx:for="{{musicList.data.result.songs}}" wx:key="index" data-id="{{musicList.data.result.songs[index].id}}" bindtap="play">
+    <view class="search_music_item_left">
+      <view class="search_music_item_name">
+       <text>{{musicList.data.result.songs[index].album.name}}</text>
+      </view>
+      <view class="desc">
+        <image src="../static/img/dmt.png"></image>
+        <text>{{musicList.data.result.songs[0].artists[0].name}}</text> -
+        <text class="music_author_desc">{{musicList.data.result.songs[index].album.name}}</text>
+      </view>
+    </view>
+    <view class="search_music_item_right">
+      <image src="../static/img/down_btn.png"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 音乐专区
+<view class="music_areo main">
+  <text>音乐专区</text>
+</view>
+<view class="music_areo_all main">
+  <view class="music_areo_item">
+    <image src="../static/img/dfa.png">
+      <view class="music_areo_item_top">
+        <view class="musict_areo_item_name">
+          <text>分类</text>
+        </view>
+        <view class="musict_areo_item_img">
+          <image src=""></image>
+        </view>
+      </view>
+    </image>
+    <view class="music_areo_item_top">
+      <view class="musict_areo_item_desc"></view>
+    </view>
+  </view>
+</view> -->

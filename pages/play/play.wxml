@@ -1,0 +1,64 @@
+<view class="login-container">
+      <view class="beijing" style=" background: url({{picUrl}});"></view>
+      <view class="content">
+        <view class="header">
+        <view bindtap="back"><image src="../../static/plays/eks.png"></image></view>
+        <view>
+       <view>
+        <text>
+        {{song_ids[currentSong].name}}
+        </text>
+       </view>
+        <view bindtap="open_artists">
+          <text>
+        {{song_ids[currentSong].ar[0].name}}
+        </text>
+        </view>
+        </view>
+        <view>
+        <!-- <image src="../../static/plays/e3_.png"></image> -->
+        </view>
+
+        </view>
+        <view class="body" bindtap="lyrics">
+        <view class="{{isPlay?'Rotation':''}} {{isHidden?'hidden':''}}">
+        <image src="../../static/plays/e25.png"  class="outer"></image>
+        <image src="{{picUrl}}" class="inner">
+        </image>
+        </view>
+        <view id="lyric_area"  class="{{!isHidden?'hidden':''}}">
+        
+        <view  id="lyric_area_1" 
+        style="transform: translateY({{silde}}rpx);"
+        >
+          <view wx:for="{{lyric_array}}" class="lyric {{goodIndex==lineNo-1?' lineHigh':''}}" wx:key="index" wx:for-index="goodIndex" data-index='{{goodIndex}}'>
+          {{item.c}}
+          </view>
+        </view>
+      </view>
+        </view>
+        <view class="footer">
+        <view class="first">
+        <image src="../../static/plays/cvw.png" bindtap="none_"></image>
+        <image src="../../static/plays/e3j.png" bindtap="none_"></image>
+        <image src="../../static/plays/e4w.png" bindtap="none_"></image>
+        <image src="../../static/plays/e3e.png" bindtap="open_comments"></image>
+        <image src="../../static/plays/e4h.png" bindtap="none_"></image>
+        </view>
+        <view class="second">
+          <!-- <progress value="90" max="200"></progress> -->
+          <progress currentDur="{{currentTime}}" totalDur="{{duration}}" id="myComponent" bindtap="call_child"></progress>
+        </view>
+
+        <view class="thrid first">
+        <image src="../../static/plays/e3b.png" bindtap="none_"></image>
+        <image src="../../static/plays/e2j.png" bindtap="last"></image>
+        <image src="../../static/plays/note_btn_pause.png" wx:if="{{isPlay}}" bindtap="change"></image>
+        <image src="../../static/plays/note_btn_play.png" wx:else bindtap="change"></image>
+        <image src="../../static/plays/e2d.png" bindtap="next"></image>
+        <image src="../../static/plays/e51.png" bindtap="none_"></image>
+        </view>
+
+        </view>
+      </view>
+   </view>

@@ -1,0 +1,12 @@
+<!--pages/video/video.wxml-->
+<i-row i-class="sp" wx:for="{{videolist}}">
+  <i-col  i-class="item" span="22" offset="1">
+    <image class="cover" src="{{item.data.coverUrl}}"></image>
+    <i-row i-class="title">{{item.data.title}}</i-row>
+    <i-row i-class="details">
+      <i-col span="7" offset="1"><image class="good" src="../../static/play.png"></image><view>123万</view></i-col>
+      <i-col span="7" offset="1"><image class="good" src="../../static/good.png"></image><view>123万</view></i-col>
+      <i-col span="7" offset="1">{{item.data.videoGroup[0].name}}</i-col>
+    </i-row>
+  </i-col>
+</i-row>

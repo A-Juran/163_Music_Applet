@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "small-player":"/components/small-player/small-player"
+  },
+  "navigationBarTitleText":"网抑云音乐"
+}

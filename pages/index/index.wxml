@@ -1,0 +1,64 @@
+<view class="content">
+		<view class="search">
+			<view class="iconfont icon-tubiaozhizuomoban-copy" bindtap="say_"></view>
+			<view><input type="text" class="search_inp" bindtap="open_input"/></view>
+			<view class="" bindtap="gouser"><image class="user_img" src="../../static/user.png"></image></view>
+		</view>
+		<view class="swiper">
+      <swiper indicator-dots="{{false}}"
+        autoplay="true" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{res.data.data.blocks[0].extInfo.banners}}">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+              <!-- <image src="{{res.data.data.blocks[0].extInfo.banners[0].pic}}" mode=""></image> -->
+              <image src="{{item.pic}}" mode=""></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+		</view>
+		<view class="icon_box">
+      <view wx:for="{{index_incon.data}}" bindtap="goto" data-index="{{index}}" >
+      <image src="{{item.iconUrl}}"></image>
+      <text>{{item.name}}</text>
+      </view>
+		</view>
+<view  class="recommend">
+  <view class="recommend_title">
+    <text>推荐歌单</text>
+    <text bindtap="say_">更多 ＞</text>
+  </view>
+
+  <view class="recommend_content">
+      <view wx:for="{{recommend}}" class="recommend_item" bindtap="say_">
+      <image src="{{item.picUrl}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+    </view>
+  </view>
+
+
+  <view class="recommend">
+    <view class="recommend_title">
+    <text>热门精选</text>
+    <text bindtap="say_">播放 </text>
+  </view>
+
+    <view class="hot_box">
+    <view wx:for="{{4}}" bindtap="say_">
+    <!-- <image src="{{item.blurPicUrl}}"></image> -->
+    <image src="{{hot[item].blurPicUrl}}"></image>
+    <view>
+      <!-- <text>{{item.name}}</text>
+      <text>{{item.company}}</text> -->
+      <text>{{hot[item].name}}</text>
+      <text>{{hot[item].company}}</text>
+    </view>
+    <image src="../../static/icons/index/dcs.png" class="small_float"></image>
+    <image src="../../static/icons/index/c2n.png" class="small_float"></image>
+    </view>
+    </view>
+
+  </view> 
+  
+   </view>

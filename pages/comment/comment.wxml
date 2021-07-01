@@ -1,0 +1,19 @@
+<!--pages/comment/comment.wxml-->
+<i-row i-class="top_title">
+  <i-col span="13" offset="1">评论区</i-col>
+  <i-col span="10" i-class="order">
+    <i-row>
+      <i-col span="8" class="{{current==1?'active':''}}"  bindtap="change" data-id="1">推荐</i-col>
+      <i-col span="8" class="{{current==2?'active':''}}" bindtap="change" data-id="2">最热</i-col>
+      <i-col span="8" class="{{current==3?'active':''}}" bindtap="change" data-id="3">最新</i-col>
+    </i-row>
+  </i-col>
+</i-row>
+<i-row i-class="comment" wx:for="{{comments}}">
+  <i-col span="3" offset="1"><image class="avatar" src="{{item.user.avatarUrl}}"></image></i-col>
+  <i-col span="11"  offset="1"><view class="name">{{item.user.nickname}}</view><view class="time">{{item.time}}</view></i-col>
+  <i-col span="6"><view class="dz"><text>{{item.likedCount}}</text> <image class="good" src="../../static/good.png"></image></view></i-col>
+  <i-row>
+    <i-col offset="5" span="18"  i-class="dxk">{{item.content}}</i-col>
+  </i-row>
+</i-row>

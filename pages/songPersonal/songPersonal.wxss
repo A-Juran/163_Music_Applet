@@ -1,0 +1,195 @@
+/* pages/songAuthor/songAuthor.wxss */
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.author_photo {
+  width: 100%;
+}
+
+.author_photo image {
+  width: 100%;
+  height: 550rpx;
+}
+
+.author_info {
+  height: 168px;
+}
+
+.author_box {
+  width: 100%;
+  height: 160px;
+  /* border: 1px solid #000; */
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rpx 0rpx 20rpx rgb(0 0 0 / 10%);
+  opacity: 0.8;
+  position: relative;
+  top: -90rpx;
+  padding: 40rpx 0;
+}
+
+.author_box .author_img {
+  height: 80rpx;
+}
+
+.author_box .author_img image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -120rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ahtor_box_name {
+  height: 17px;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.ahtor_box_name text {
+  font-weight: bold;
+}
+
+.ahtor_box_name>image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-left: 6rpx;
+}
+
+.ahtor_box_desc {
+  margin-top: 16rpx;
+  width: 100%;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.ahtor_box_desc .ahthor_box_desc_sf {
+  margin-top: 16rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.ahtor_box_desc .ahthor_box_desc_sf text {
+  font-size: 20rpx;
+  color: #b1afaf;
+}
+
+.ahtor_box_gz {
+  margin-top: 26rpx;
+  text-align: center;
+}
+
+.ahtor_box_gz .ahtor_box_gz_btn {
+  width: 180rpx;
+  height: 50rpx;
+  line-height: 50rxp;
+  font-size: 20rpx;
+  line-height: 10px;
+  color: #ffffff;
+  border-radius: 30px;
+  background-color: rgb(0, 188, 213);
+  display: inline-block;
+}
+
+.ahtor_box_gz image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 8rpx;
+}
+
+/* 作者个人简介及作品 */
+/* .author_all_select{
+
+} */
+.scroll-view_H_select {
+  white-space: nowrap;
+}
+
+.scroll-view_H_select .scroll-view-all {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+
+.scroll-view_H_select .scroll-view-all .scroll-view-item_select {
+  display: inline-block;
+  font-size: 22rpx;
+  color: #b1afaf;
+}
+
+/* 歌手信息_content */
+.author_all_content {
+  margin-top: 20rpx;
+  border-radius: 15px;
+  box-shadow: 0rpx 0rpx 20rpx rgb(0 0 0 / 5%);
+}
+
+.author_all_content .scroll-view_H_tab {
+  white-space: nowrap;
+}
+
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .scroll-view-item_style {
+  width: 100%;
+  margin: 5px auto;
+  padding: 30rpx 16rpx 5rpx 16rpx;
+  box-sizing: border-box;
+}
+.author_all_content .scroll-view_H_tab .scroll-view-item_select {
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+
+.scroll-view-item_select .tab_author_title text {
+  /* font-family:"宋体"; */
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_rank {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 40rpx 0;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_rank .tab_author_rank_info rich-text:nth-child(1) {
+  font-size: 30rpx;
+}
+
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_rank .tab_author_rank_info rich-text:nth-child(2) {
+  margin-top: 12rpx;
+  font-size: 22rpx;
+  color: #b1afaf;
+}
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_info  .tab_author_info_author{
+  padding: 10rpx 0;
+}
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_info .tab_author_info_author image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_info .tab_author_info_author text{
+  font-size: 24rpx;
+  margin-left: 8rpx;
+  color: rgb(184, 179, 179);
+}
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_info rich-text{
+  display: block;
+  font-size: 24rpx;
+  color: rgb(184, 179, 179);
+  padding: 8px 0;
+}
+.author_all_content .scroll-view_H_tab .scroll-view-item_select .tab_author_info rich-text>span{
+  color: rgb(112, 109, 109);
+  
+}
